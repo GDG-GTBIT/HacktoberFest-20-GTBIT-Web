@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Enriqueta:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Hind:wght@300&family=Muli&family=Oxygen&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containerbody{
+    width: 30vw;
+    height: 89vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(192, 180, 180, 0.384);
+}
+.container{
+    position: relative;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    position: relative;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+}
+.card:hover{
+    box-shadow: 5px 5px 5px dimgray;
+    background-color: white;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.number h2{
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Oxygen',sans-serif;
+}
+.number h2 span{
+    color: black;
+    font-size: 24px;
+    transition: 0.5s;
+}
+.text{
+    position: relative;
+    color: black;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 'Enriqueta',serif;
+}
+.text span{
+    font-family: 'Oxygen',sans-serif;
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: grey;
+    stroke-width: 10;
+    transform: translate(5px, 5px);
+}
+svg circle:nth-child(2)
+{
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
