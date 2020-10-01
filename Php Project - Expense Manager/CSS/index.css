@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Enriqueta:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Hind:wght@300&family=Muli&family=Oxygen&family=Roboto&display=swap');
+/*
+    font-family: 'Bree Serif', serif;
+    font-family: 'Enriqueta', serif;
+
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+*{
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('/Images/home-pg-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 104% 1750%;
+}
+.content{
+    /* position: relative; */
+    left: 5vw;
+    border: 7px solid;
+    border-radius: 40px;
+    right: 5vw;
+    top: 5vh;
+    bottom: 5vh;
+    width: 90vw;
+    position: fixed;
+    height: 90vh;
+}
+.head{
+    width: 89%;
+    height: 10vh;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.head a{
+    text-decoration: none;
+    color: black;
+}
+.head a .logo-head{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: inherit;
+}
+.head a .logo-head img{
+    height: 8vh;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.head a .logo-head .mainhead{
+    font-size: 35px;
+    font-family: 'Enriqueta', serif;
+}
+.head .buttons{
+    margin-right: 20px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#registerBtn{
+    margin-left: 20px;
+}
+#loginBtn,#registerBtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    border-left: 2px solid rgb(245, 41, 61);
+    font-size: 20px;
+    padding-left: 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+#loginBtn:hover,#registerBtn:hover{
+    color: rgb(245, 41, 61);
+    border-left: 2px solid white;
+}
+.intro{
+    position: relative;
+    top: 20vh;
+    margin-left: 10vw;
+}
+.intro p{
+    margin-left: 105px;
+    font-family: 'Muli', sans-serif;
+}
+.intro div{
+    display: flex;
+    height: 180px;
+}
+.intro div span{
+    color: rgb(245, 41, 61);
+    font-size: 160px;
+    margin-right: 10px;
+}
+.intro div h1{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-family: 'Muli', sans-serif;
+    position: relative;
+    top: 35px;
+    line-height: 55px;
+}
+#features{
+    position: relative;
+    top: 8vh;
+    font-weight: bold;
+    margin-left: 105px;
+    font-family: 'Muli', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: rgb(245, 41, 61);
+    font-size: 20px;
+    padding-left: 2px;
+    cursor: pointer;
+    outline: none;
+}
+#features img{
+    width: 20px;
+    position: relative;
+    top: 3.5px;
+}
+#features:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/* Mobile L */
+@media(max-width:673px){
+    .head a .logo-head{
+        display: flex;
+        width: 320px;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 0px;
+        height: inherit;
+    }
+    .head a .logo-head img{
+        height: 6vh;
+        border-radius: 50%;
+        margin-right: 2px;
+    }
+    .head a .logo-head .mainhead{
+        font-size: 21px;
+        font-weight: bold;
+    }
+    .head .buttons{
+        margin-right: 16px;
+        width: 180px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #registerBtn{
+        margin-left: 10px;
+    }
+    #loginBtn,#registerBtn{
+        background-color: transparent;
+        border: none;
+        border-left: 2px solid rgb(245, 41, 61);
+        font-size: 20px;
+        padding-left: 2px;
+        cursor: pointer;
+        outline: none;
+    }
+    .intro{
+        position: relative;
+        top: 12vh;
+        margin-left: 6vw;
+    }
+    .intro p{
+        margin-left: 5px;
+        position: relative;
+        top: 30px;
+    }
+    .intro div{
+        margin-left: 30px;
+        display: flex;
+        height: 180px;
+    }
+    .intro div span{
+        color: rgb(245, 41, 61);
+        font-size: 170px;
+    }
+    .intro div h1{
+        text-transform: capitalize;
+        font-size: 50px;
+        position: relative;
+        top: 40px;
+    }
+    #features{
+        position: relative;
+        top: 8vh;
+        margin-left: 105px;
+        background-color: transparent;
+        border: none;
+        color: rgb(245, 41, 61);
+        font-size: 20px;
+        padding-left: 2px;
+        cursor: pointer;
+        outline: none;
+    }
+    #features img{
+        width: 20px;
+        position: relative;
+        top: 3.5px;
+    }
+    #features:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+@media(max-width:425px){
+    .head a .logo-head{
+        display: flex;
+        width: 220px;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 0px;
+        height: inherit;
+    }
+    .head a .logo-head img{
+        height: 6vh;
+        border-radius: 50%;
+        margin-right: 2px;
+    }
+    .head a .logo-head .mainhead{
+        font-size: 21px;
+        font-weight: bold;
+    }
+    .head .buttons{
+        margin-right: 16px;
+        width: 180px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #registerBtn{
+        margin-left: 10px;
+    }
+    #loginBtn,#registerBtn{
+        background-color: transparent;
+        border: none;
+        border-left: 2px solid rgb(245, 41, 61);
+        font-size: 20px;
+        padding-left: 2px;
+        cursor: pointer;
+        outline: none;
+    }
+    .intro{
+        position: relative;
+        top: 12vh;
+        margin-left: 6vw;
+    }
+    .intro p{
+        margin-left: 5px;
+        position: relative;
+        top: 30px;
+        /* word-break: keep-all; */
+    }
+    .intro div{
+        margin-left: 30px;
+        display: flex;
+        height: 180px;
+    }
+    .intro div span{
+        color: rgb(245, 41, 61);
+        font-size: 170px;
+    }
+    .intro div h1{
+        text-transform: capitalize;
+        font-size: 50px;
+        position: relative;
+        top: 10px;
+    }
+    #features{
+        position: relative;
+        top: 8vh;
+        margin-left: 65px;
+        background-color: transparent;
+        border: none;
+        color: rgb(245, 41, 61);
+        font-size: 20px;
+        padding-left: 2px;
+        cursor: pointer;
+        outline: none;
+    }
+    #features img{
+        width: 20px;
+        position: relative;
+        top: 3.5px;
+    }
+    #features:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+@media(max-width:375px){
+    .head a .logo-head{
+        display: flex;
+        width: 220px;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 0px;
+        height: inherit;
+    }
+    .head a .logo-head img{
+        height: 6vh;
+        border-radius: 50%;
+        margin-right: 2px;
+    }
+    .head a .logo-head .mainhead{
+        font-size: 21px;
+        font-weight: bold;
+    }
+    .head .buttons{
+        margin-right: 16px;
+        width: 180px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #registerBtn{
+        margin-left: 4px;
+    }
+    #loginBtn,#registerBtn{
+        background-color: transparent;
+        border: none;
+        border-left: 2px solid rgb(245, 41, 61);
+        font-size: 15px;
+        padding-left: 1px;
+        cursor: pointer;
+        outline: none;
+    }
+    .intro{
+        position: relative;
+        top: 12vh;
+        margin-left: 6vw;
+    }
+    .intro p{
+        margin-left: 5px;
+        position: relative;
+        top: 30px;
+    }
+    .intro div{
+        margin-left: 0px;
+        display: flex;
+        height: 180px;
+    }
+    .intro div span{
+        color: rgb(245, 41, 61);
+        font-size: 170px;
+    }
+    .intro div h1{
+        text-transform: capitalize;
+        font-size: 37px;
+        position: relative;
+        top: 40px;
+    }
+    #features{
+        position: relative;
+        top: 8vh;
+        margin-left: 55px;
+        background-color: transparent;
+        border: none;
+        color: rgb(245, 41, 61);
+        font-size: 20px;
+        padding-left: 2px;
+        cursor: pointer;
+        outline: none;
+    }
+    #features img{
+        width: 20px;
+        position: relative;
+        top: 3.5px;
+    }
+    #features:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+@media(max-width:325px){
+    .head a .logo-head{
+        display: flex;
+        width: 160px;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 2px;
+        padding-right: 0px;
+        height: inherit;
+    }
+    .head a .logo-head img{
+        height: 5vh;
+        border-radius: 50%;
+        margin-right: 2px;
+    }
+    .head a .logo-head .mainhead{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .head .buttons{
+        margin-right: 16px;
+        width: 180px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #registerBtn{
+        margin-left: 4px;
+    }
+    #loginBtn,#registerBtn{
+        background-color: transparent;
+        border: none;
+        border-left: 2px solid rgb(245, 41, 61);
+        font-size: 15px;
+        padding-left: 1px;
+        cursor: pointer;
+        outline: none;
+    }
+    .intro{
+        position: relative;
+        top: 12vh;
+        margin-left: 6vw;
+    }
+    .intro p{
+        margin-left: 5px;
+        position: relative;
+        top: 30px;
+    }
+    .intro div{
+        margin-left: 2px;
+        display: flex;
+        height: 180px;
+    }
+    .intro div span{
+        color: rgb(245, 41, 61);
+        font-size: 160px;
+    }
+    .intro div h1{
+        text-transform: capitalize;
+        font-size: 30px;
+        position: relative;
+        top: 35px;
+    }
+    #features{
+        position: relative;
+        top: 8vh;
+        margin-left: 55px;
+        background-color: transparent;
+        border: none;
+        color: rgb(245, 41, 61);
+        font-size: 20px;
+        padding-left: 2px;
+        cursor: pointer;
+        outline: none;
+    }
+    #features img{
+        width: 20px;
+        position: relative;
+        top: 3.5px;
+    }
+    #features:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
