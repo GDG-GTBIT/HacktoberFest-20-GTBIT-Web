@@ -1,4 +1,4 @@
-# Hacktoberfest 2020 Web
+# HacktoberFest-20-GTBIT-Web
 
 ## Landing Page Challenge
 
