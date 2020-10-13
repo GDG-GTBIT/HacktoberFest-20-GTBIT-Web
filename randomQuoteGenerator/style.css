@@ -1,0 +1,28 @@
+body{
+    background-color: palevioletred;
+}
+
+#container{
+    background-color: pink;
+    height: 300px;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 5px purple 5px plum 0px;
+}
+
+#btn{
+    background-color: cornsilk;
+    height: 50px;
+    width: 250px;
+    margin: 50px auto;
+    text-align: center;
+    border: 2px gray;
+    font-size: 25px;
+}
+
+#output{
+    color: purple;
+    margin: 20px auto;
+    font-size: 20px;
+}
