@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
-  background-color: #df793b;
+  background-color: #c35d23;
 }
 
 .heart {
@@ -75,10 +75,9 @@ body {
 
 i {
   font-size: 75px;
-  color: #df793b;
+  color: #c35d23;
   position: absolute;
   transform: rotate(-45deg);
   left: 10px;
   top: 5px;
-  /* transition:all 0.5s; */
 }
