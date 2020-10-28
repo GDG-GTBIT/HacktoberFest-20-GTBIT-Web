@@ -1,21 +1,33 @@
-#banner_image{
-    padding-top: 75px;
- padding-bottom: 50px;
- text-align: center;
- color: #f8f8f8;
-  background-image:url("Food.jpg");background-repeat: no-repeat;
-    background-size:cover;background-position: center;
-
+*{
+    box-sizing: border-box;
 }
-#banner_content{
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-image{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
- padding-top: 6%;
- padding-bottom: 6%;
-margin-top: 12%;
- margin-bottom: 12%;
- background-color: rgba(0, 0, 0, 0.7); max-width: 1200px;
 }
 
-h1{
-color:orange;
-}/* */
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: orangered;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.order-btn{
+    border-radius: 25px;
+}
