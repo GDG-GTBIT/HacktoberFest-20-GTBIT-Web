@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3 id="header">Welcome to Our Institution</h3>
+        </div>
+    </header>
+    <nav>
+        <span class="pillet">Home</span>
+        <span class="pillet">Courses</span>
+        <span class="pillet">Events</span>
+        <span class="pillet">Help</span>
+        <span class="right-menu"></span>
+    </nav>
+    <section id="regsection">
+        <fieldset id="regfst">
+            <legend>Registration</legend>
+            <form>
+                <table>
+                    <tr>
+                        <td>Username<span class="mandatory">*</span></td>
+                        <td><input class="form-input" id="username" type="text" placeholder="Enter Username"
+                                autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td>Password<span class="mandatory">*</span></td>
+                        <td><input class="form-input" id="password" type="password" placeholder="Enter Password"></td>
+                    </tr>
+                    <tr>
+                        <td>Select Your Domain</td>
+                        <td><select id="domains" class="form-input">
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Select Role</td>
+                        <td>
+                            <label>Admin</label></lable><input type="radio" name="role" value="Admin" checked>
+                            <label>User</label><input type="radio" name="role" value="User">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Access Areas</td>
+                        <td>
+                            <label>Courses</label>
+                            <input type="checkbox" checked>
+                            <label>Faculty</label>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Upload Your Photo</td>
+                        <td>
+                            <input class="form-input" type="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea d="commentbox" width="300px" cols="30"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button id="loginbtn" class="button-login">Login</button></td>
+                    </tr>
+                </table>
+            </form>
+            <div id="errors"></div>
+        </fieldset>
+    </section>
+    <section id="instructions" class="dummy">
+        <div>Instructions for Login!!!</div>
+        <ul>
+            <li>Please choose a valid Username</li>
+            <li>Enter you Valid Passsword</li>
+            <li>Select Your Domain</li>
+        </ul>
+    </section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="dummy footer-strip">Copyright DB 2020 Grads batch</div>
+</body>
+
+</html>
