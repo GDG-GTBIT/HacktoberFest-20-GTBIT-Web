@@ -86,12 +86,12 @@
             $legendX=160;
             $legendY=30;
             $degunit=360/$exp_result[0];
-            $exp_res_sub_tot=mysqli_fetch_all($exp_tot_sub);
+            $exp_res_sub_tot=mysqli_fetch_all($query2);
             $currentAngle=0;
             $i=0;
             while($i<mysqli_num_rows($query2))
             {
-                switch($exp_res_sub_tot[$i][0])
+                switch($exp_res_sub_tot[$i][3])
                 {
                     case "Bills":               $color=[223,32,32]; //Red 
                                                 break;
@@ -128,14 +128,14 @@
                     case "Withdrawal":          $color=[166,89,89]; //Dull Red
                                                 break;
                 }
-                $deg[$i]=$degunit*$exp_res_sub_tot[$i][1];
+                $deg[$i]=$degunit*$exp_res_sub_tot[$i][2];
                 $pdf->SetFillColor($color[0],$color[1],$color[2]);
                 $pdf->SetDrawColor($color[0],$color[1],$color[2]);
                 $pdf->Sector($pieX,$pieY,$r,$currentAngle,$currentAngle+$deg[$i]);
                 $currentAngle+=$deg[$i];
                 $pdf->Rect($legendX,$legendY,5,5,"DF");
                 $pdf->SetXY($legendX + 6,$legendY);
-                $pdf->Cell(50,5,$exp_res_sub_tot[$i][0],0,0);
+                $pdf->Cell(50,5,$exp_res_sub_tot[$i][3],0,0);
                 $legendY+=8;
                 $i+=1;
             }
